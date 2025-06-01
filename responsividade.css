@@ -1,0 +1,209 @@
+@media screen and (max-width: 1283px) {
+  .caixa-conteudo-Mais {
+    display: none;
+  }
+
+  .caixa-cabecalho {
+    padding: 0rem 5rem;
+  }
+
+  .botao-media {
+    display: none;
+  }
+
+  .caixa-botao,
+  .caixa-cabecalho {
+    gap: 7rem;
+  }
+
+  .caixa-conteudo-Explorar {
+    transform: translateX(-30%);
+  }
+
+  .caixa-conteudo-Progresso {
+    transform: translateX(40%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .caixa-botao,
+  .caixa-cabecalho {
+    gap: 5rem;
+  }
+
+  .caixa-conteudo {
+    transform: translateX(120%);
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .botao-progresso {
+    display: none;
+  }
+
+  .caixa-conteudo {
+    transform: translateX(100%);
+  }
+
+  .caixa-conteudo-Explorar {
+    transform: translateX(30%);
+  }
+
+  .caixa-botao,
+  .caixa-cabecalho {
+    gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .caixa-conteudo-Explorar {
+    transform: translateX(20%);
+  }
+
+  .caixa-conteudo {
+    transform: translateX(90%);
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .logo-rockstar-games-img,
+  .vertical,
+  .caixa-botao,
+  .botao-compre-ja {
+    display: none;
+  }
+
+  .caixa-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Sessão O fim da era do velho */
+
+@media screen and (max-width: 1366px) {
+  .estados-unidos-p {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .estados-unidos-p {
+    font-size: 1.8rem;
+  }
+
+  .caixa-p {
+    padding: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .estados-unidos-p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Sessão Imagens */
+
+@media screen and (max-width: 1023px) {
+  .caixa-imagens {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem 5rem;
+  }
+
+  .titulo-h3 {
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .titulo-h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Sessão Foragidos para sempre */
+
+@media screen and (max-width: 1023px) {
+  .Foragidos-h1 {
+    font-size: 9.9rem;
+  }
+
+  .Ja-disponivel {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (max-width: 893px) {
+  .Foragidos-h1 {
+    white-space: normal;
+    word-break: break-word;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .caixa-mais-18-img {
+    transform: translate(60%, 20%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Foragidos-h1 {
+    font-size: 8.8rem;
+  }
+
+  .Ja-disponivel {
+    font-size: 4rem;
+  }
+
+  .img-estrela {
+    height: 23rem;
+  }
+
+  .caixa-disponivel-18 {
+    transform: translate(-50%, 20%);
+  }
+
+  .caixa-mais-18-img {
+    transform: translate(62%, 14%);
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .img-estrela {
+    height: 15rem;
+  }
+
+  .caixa-disponivel-18 {
+    transform: translate(-50%, 30%);
+  }
+
+  .caixa-mais-18-img {
+    height: 4.194rem;
+    height: 7.194rem;
+  }
+
+  .mais-18-img {
+    max-width: 5.095rem;
+    height: 5.095rem;
+  }
+}
+
+/* footer */
+
+@media screen and (max-width: 767px) {
+  .caixa-footer-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .caixa-footer {
+    padding: 3.8rem 3rem;
+  }
+}

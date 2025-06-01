@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #000000;
+}
+
+.caixa-cabecalho {
+  max-width: 100%;
+  height: 8rem;
+  padding: 0rem 8rem;
+  background-color: #020202;
+  border-bottom: solid 0.1rem #282828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  position: relative;
+}
+
+.caixa-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logo-rockstar-games-img {
+  max-width: 3rem;
+  height: 3rem;
+}
+
+.vertical {
+  border: solid 0.1rem #676767;
+  width: 0.1rem;
+  height: 3rem;
+}
+
+.logo-red-dead-redemption {
+  max-width: 26.438rem;
+  height: 3rem;
+  width: 100%;
+}
+
+.visao-geral {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #d8d8d8;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.linha-underline {
+  background: white;
+  height: 0.2rem;
+  width: 12.906rem;
+  display: block;
+  border-radius: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+.caixa-botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin: 0.3rem 0rem 0rem;
+}
+
+.botao-explorar,
+.botao-explorar,
+.botao-progresso,
+.botao-media,
+.botao-mais {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #d8d8d8;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.linha-underline2 {
+  background: white;
+  height: 0.2rem;
+  width: 12.906rem;
+  display: block;
+  border-radius: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px;
+  display: none;
+}
+
+.botao-explorar:hover .linha-underline2,
+.botao-progresso:hover .linha-underline2,
+.botao-media:hover .linha-underline2,
+.botao-mais:hover .linha-underline2 {
+  display: block;
+}
+
+.botao-media {
+  white-space: nowrap;
+}
+
+.botao-compre-ja {
+  width: 100%;
+  max-width: 11.352rem;
+  height: 3.7rem;
+  border: solid 0.1rem #ffffff;
+  color: #ffffff;
+  background-color: #0c0c0c;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  transition: 5ms ease-in-out;
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.botao-compre-ja:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.caixa-conteudo-Explorar {
+  width: 100%;
+  max-width: 23.8rem;
+  background-color: #121212;
+  border: solid 0.1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #202020;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: none;
+  height: 27rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-60%);
+}
+
+.caixa-conteudo-Progresso {
+  width: 100%;
+  max-width: 23.8rem;
+  background-color: #121212;
+  border: solid 0.1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #202020;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: none;
+  height: 40rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(25%);
+}
+
+.caixa-conteudo-Midia {
+  width: 100%;
+  max-width: 23.8rem;
+  background-color: #121212;
+  border: solid 0.1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #202020;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  height: 27rem;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(100%);
+}
+
+.caixa-conteudo-Mais {
+  width: 100%;
+  max-width: 23.8rem;
+  background-color: #121212;
+  border: solid 0.1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #202020;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  height: 20rem;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(140%);
+}
+
+.icone-img {
+  width: 100%;
+  max-width: 2rem;
+  height: 2rem;
+}
+
+.caixa-conteudo {
+  width: 100%;
+  max-width: 23.8rem;
+  background-color: #121212;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  display: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(140%);
+  overflow-y: scroll;
+  overflow-x: none;
+  height: 40rem;
+}
+
+.botao {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  gap: 0.5rem;
+  border-bottom: solid 0.1rem #202020;
+  max-width: 100%;
+  height: 6.4rem;
+  overflow-y: scroll;
+}
+
+button .seta {
+  transition: transform 0.3s ease;
+  max-width: 2rem;
+  height: 1.845rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+button.ativo .seta {
+  transform: rotate(180deg);
+}
+
+.caixa-fechar.ativa {
+  max-height: 500px;
+}
+
+.links {
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 0rem 1rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border-bottom: solid 0.1rem #202020;
+  max-width: 23.8rem;
+  height: 6.4rem;
+}
+
+.links.ultimo {
+  border-bottom: none;
+}
+
+.icone-img {
+  width: 100%;
+  max-width: 2rem;
+  height: 2rem;
+}
+
+/* Sessão O fim da era do velho */
+
+.Arthur-Morgan-IMG {
+  width: 100%;
+  max-width: 136.6rem;
+  height: auto;
+  display: block;
+}
+
+.fundo-img {
+  background-image: url("RDR-IMG/fundo-img.jpg");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.caixa-p {
+  padding: 4rem;
+  width: 100%;
+  max-width: 136.6rem;
+  height: auto;
+}
+
+.estados-unidos-p {
+  width: 100%;
+  max-width: 85rem;
+  text-align: center;
+  height: auto;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.7;
+  font-family: "Hapna Slab Serif W00 Bold", serif;
+  margin: 0rem 24.3rem;
+}
+
+/*  Sessão Imagens */
+
+.caixa-imagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 5rem;
+  padding: 2rem;
+  max-width: 136.6rem;
+  width: 100%;
+  justify-items: center;
+}
+
+.imagem-com-fundo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.imagens-rdr {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+  z-index: 1;
+}
+
+.fundo-sobreposto {
+  position: absolute;
+  inset: 0;
+  background-image: url("RDR-IMG/fundo3.png");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.titulo-h3 {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  width: 100%;
+  transform: translateY(35%);
+  font-family: "Chinese Rocks", sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: "Chinese Rocks";
+  src: url("/chinese_rocks/chinese rocks rg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.titulo-h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.imagens-rdr:hover {
+  transform: scale(1.2);
+}
+
+.imagem-com-fundo:hover + .titulo-h3 a {
+  color: red;
+}
+
+/* Sessão Foragidos para sempre */
+
+.caixa-foragidos-para-sempre {
+  width: 100%;
+  max-width: 136.6rem;
+  height: 16.5rem;
+  position: relative;
+}
+
+.borda-final {
+  width: 100%;
+  /* max-width: 100%; */
+  max-width: 136.6rem;
+  height: auto;
+}
+
+.fundo-vermelho {
+  background-image: url("RDR-IMG/imagem-vermelha.jpg");
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.caixa-Foragidos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Foragidos-h1 {
+  font-size: 11rem;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: "Chinese Rocks", sans-serif;
+}
+
+.img-estrela {
+  width: 100%;
+  max-width: 384rem;
+  height: 30rem;
+  display: block;
+}
+
+.caixa-disponivel-18 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%);
+  padding: 5rem 0rem 2rem;
+}
+
+.Ja-disponivel {
+  font-size: 5.1rem;
+  color: white;
+  font-family: "Chinese Rocks", sans-serif;
+  white-space: nowrap;
+}
+
+.caixa-mais-18-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 10.295rem;
+  height: 10.194rem;
+  height: 10.194rem;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  border: solid 0.1rem #2d2d2d;
+  transform: translate(60%, 25%);
+}
+
+.mais-18-img {
+  width: 100%;
+  max-width: 6.095rem;
+  height: 6.095rem;
+}
+
+/* footer */
+
+.caixa-footer {
+  width: 100%;
+  max-width: 135.1rem;
+  height: 3.511rem;
+  padding: 3.8rem 8rem;
+  background-color: #000000;
+}
+
+.caixa-lista-1 {
+  padding: 1.2rem 0rem 0rem;
+  width: 100%;
+  max-width: 95.292rem;
+  height: 16.238rem;
+}
+
+.lista {
+  font-size: 1.4rem;
+  color: #ebebeb;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista a {
+  color: #ebebeb;
+  white-space: nowrap;
+}
+
+.caixa-redes-sociais {
+  width: 100%;
+  max-width: 119.1rem;
+  height: 5.2rem;
+}
+
+.footer-p {
+  font-size: 1.4rem;
+  color: #989898;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.caixa-footer-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+  width: 100%;
+  padding: 4.8rem 0rem;
+}
+
+.caixa-footer-p-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}

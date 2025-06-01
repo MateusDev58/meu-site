@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Dead Redemption 2</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/0b4832910f8c62e341d74bcc819c9cb3?family=Hapna+Slab+Serif+W00+Bold"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/jpeg;base64,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"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="responsividade.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="caixa-cabecalho">
+          <div class="caixa-logos">
+            <img
+              class="logo-rockstar-games-img"
+              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c46845952588bf44125a37117d4da32c.svg"
+              alt="Logo Rockstar Games"
+            />
+            <div class="vertical"></div>
+
+            <img
+              class="logo-red-dead-redemption"
+              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5e3cf24e53a1fb96410ddbe7d17ca96f.svg"
+              alt="Logo Red Dead Redemption"
+            />
+          </div>
+
+          <div class="caixa-botao">
+            <span class="visao-geral">
+              <a class="visao-geral" target="_blank" href="">Visão geral</a>
+              <span class="linha-underline"></span>
+            </span>
+
+            <button
+              onclick="abrirCaixa('caixa-Explorar')"
+              class="botao-explorar"
+            >
+              <span class="texto-botao">Explorar</span>
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+              <span class="linha-underline2"></span>
+            </button>
+
+            <button
+              onclick="abrirCaixa('caixa-Progresso')"
+              class="botao-progresso botao-com-underline"
+            >
+              Progresso
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+              <span class="linha-underline2"></span>
+            </button>
+
+            <button
+              onclick="abrirCaixa('caixa-Midia')"
+              class="botao-media botao-com-underline"
+            >
+              Mídia
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+              <span class="linha-underline2"></span>
+            </button>
+
+            <button
+              onclick="abrirCaixa('caixa-Mais')"
+              class="botao-mais botao-com-underline"
+            >
+              Mais
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+              <span class="linha-underline2"></span>
+            </button>
+          </div>
+
+          <a
+            class="botao-compre-ja"
+            target="_blank"
+            href="https://store.rockstargames.com/game/buy-red-dead-redemption-2?_gl=1*yd23fn*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAzODMwJGo1NyRsMCRoMA.."
+            >Compre já</a
+          >
+        </div>
+      </nav>
+
+      <div id="caixa-Explorar" class="caixa-conteudo-Explorar">
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/features/vanderlindegang"
+          >Gangue Van der Linde</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/features/frontiercitiesandtowns"
+          >Locais</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/features/wildlife"
+          >Vida Selvagem</a
+        >
+        <a
+          class="links ultimo"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/features/weaponry"
+          >Armas</a
+        >
+      </div>
+
+      <div id="caixa-Progresso" class="caixa-conteudo-Progresso">
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/overview?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Estatísticas</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/story?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Capítulos</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/challenges?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Desafios</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/player?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Personagem</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/compendium?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Compêndio</a
+        >
+        <a
+          class="links ultimo"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/achievements?_gl=1*1e5eyip*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Conquistas</a
+        >
+      </div>
+
+      <div id="caixa-Midia" class="caixa-conteudo-Midia">
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/screens"
+          >Galeria</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/downloads"
+          >Arte</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/videos"
+          >Vídeos</a
+        >
+        <a
+          class="links ultimo"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadredemption2/features/music"
+          >Música</a
+        >
+      </div>
+
+      <div id="caixa-Mais" class="caixa-conteudo-Mais">
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadonline"
+          >Online</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/catalogue?_gl=1*1npz6ps*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Catálogo
+          <span
+            ><img
+              class="icone-img"
+              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg"
+              alt="icone img" /></span
+        ></a>
+        <a
+          class="links ultimo"
+          target="_blank"
+          href="https://support.rockstargames.com/categories/115001624507?_gl=1*1npz6ps*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Suporte
+          <span
+            ><img
+              class="icone-img"
+              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg"
+              alt="icone img" /></span
+        ></a>
+      </div>
+
+      <div id="caixa-conteudo" class="caixa-conteudo">
+        <div class="grupo">
+          <button class="botao">
+            Explorar
+            <span>
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+            </span>
+          </button>
+          <div class="caixa-fechar">
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/features/vanderlindegang"
+              >Gangue Van der Linde</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/features/frontiercitiesandtowns"
+              >Locais</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/features/wildlife"
+              >Vida Selvagem</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/features/weaponry"
+              >Armas</a
+            >
+          </div>
+        </div>
+
+        <!-- parte 2 -->
+
+        <div class="grupo">
+          <button class="botao">
+            Progresso
+            <span>
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+            </span>
+          </button>
+          <div class="caixa-fechar">
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://socialclub.rockstargames.com/games/rdr2/overview?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+              >Estatísticas</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://socialclub.rockstargames.com/games/rdr2/story?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+              >Capítulos</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://socialclub.rockstargames.com/games/rdr2/challenges?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+              >Desafios</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://socialclub.rockstargames.com/games/rdr2/player?_gl=1*1ommgdt*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+              >Personagem</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://socialclub.rockstargames.com/games/rdr2/achievements?_gl=1*1e5eyip*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+              >Conquistas</a
+            >
+          </div>
+        </div>
+
+        <!-- parte 3 -->
+
+        <div class="grupo">
+          <button class="botao">
+            Mídia
+            <span>
+              <img
+                class="seta"
+                src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg"
+                alt="seta"
+              />
+            </span>
+          </button>
+          <div class="caixa-fechar">
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/screens"
+              >Galeria</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/downloads"
+              >Arte</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/videos"
+              >Vídeos</a
+            >
+            <a
+              class="links ultimo"
+              target="_blank"
+              href="https://www.rockstargames.com/reddeadredemption2/features/music"
+              >Música</a
+            >
+          </div>
+        </div>
+
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.rockstargames.com/reddeadonline"
+          >Online
+        </a>
+
+        <a
+          class="links"
+          target="_blank"
+          href="https://socialclub.rockstargames.com/games/rdr2/catalogue?_gl=1*1npz6ps*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Catálogo
+          <span
+            ><img
+              class="icone-img"
+              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg"
+              alt=""
+          /></span>
+        </a>
+
+        <a
+          class="links ultimo"
+          target="_blank"
+          href="https://support.rockstargames.com/categories/115001624507?_gl=1*1npz6ps*_gcl_au*MTMwODMyNzU3My4xNzQ3ODQ3Njgz*_ga*NTE2ODY2MjQzLjE3NDQzMzQ0NjY.*_ga_PJQ2JYZDQC*czE3NDg3MDEzMTIkbzk0JGcxJHQxNzQ4NzAyNDc5JGo1OCRsMCRoMA.."
+          >Suporte
+          <span
+            ><img
+              class="icone-img"
+              src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg"
+              alt="" /></span
+        ></a>
+      </div>
+    </header>
+
+    <!-- Sessão O fim da era do velho -->
+
+    <main>
+      <section>
+        <img
+          class="Arthur-Morgan-IMG"
+          src="RDR-IMG/RDR-IMAGEM.jpg"
+          alt="Arthur Morgan IMG"
+        />
+
+        <div class="fundo-img caixa-p">
+          <p class="estados-unidos-p">
+            Estados Unidos, 1899. O fim da era do velho oeste começou. Depois de
+            tudo dar errado durante um roubo em uma cidade do oeste chamada
+            Blackwater, Arthur Morgan e a gangue Van der Linde são forçados a
+            fugir. Com agentes federais e os melhores caçadores de recompensas
+            no seu encalço, a gangue precisa roubar, assaltar e lutar para
+            sobreviver no impiedoso coração dos Estados Unidos. Conforme
+            divisões internas profundas ameaçam despedaçar a gangue, Arthur deve
+            fazer uma escolha entre os seus próprios ideais e a lealdade à
+            gangue que o criou.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sessão Imagens -->
+
+      <section>
+        <div class="caixa-imagens">
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem7.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3"><a target="_blank" href="">PC Release</a></h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imgagem1.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3"><a target="_blank" href="">Reviews</a></h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagemRDR.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3">
+              <a target="_blank" href="">Red Dead Online</a>
+            </h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem8.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3"><a target="_blank" href="">Weaponry</a></h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem5.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3">
+              <a target="_blank" href="">Special & Ultimate Editions</a>
+            </h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem3.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3">
+              <a target="_blank" href="">Gameplay Video Part 2</a>
+            </h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem6.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3">
+              <a target="_blank" href="">The Van Der Linde Gang</a>
+            </h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem4.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3"><a target="_blank" href="">Wildlife</a></h3>
+          </div>
+
+          <div class="bloco">
+            <div class="imagem-com-fundo">
+              <a target="_blank" href="">
+                <img
+                  class="imagens-rdr"
+                  src="RDR-IMG/imagem2.jpg"
+                  alt="RDR IMAGEM"
+                />
+              </a>
+              <div class="fundo-sobreposto"></div>
+            </div>
+            <h3 class="titulo-h3"><a target="_blank" href="">Soundtrack</a></h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sessão Foragidos para sempre -->
+      <section>
+        <div class="caixa-foragidos-para-sempre fundo-vermelho">
+          <img
+            class="borda-final"
+            src="RDR-IMG/borda-final.png"
+            alt="borda final img"
+          />
+
+          <div class="caixa-Foragidos">
+            <h1 class="Foragidos-h1">Foragidos para sempre</h1>
+          </div>
+
+          <img
+            class="img-estrela"
+            src="RDR-IMG/imagem-estrela.png"
+            alt="imagem estrela"
+          />
+
+          <div class="caixa-disponivel-18">
+            <p class="Ja-disponivel">Já disponível</p>
+
+            <div class="caixa-mais-18-img">
+              <a
+                target="_blank"
+                href="http://culturadigital.br/classind/criterios-e-normas/aplicacao-dos-criterios/"
+                ><img
+                  class="mais-18-img"
+                  src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/608f591c35aff9d47091dd7fe9a8fb13.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="caixa-footer">
+        <div class="caixa-lista-1">
+          <ul class="lista">
+            <li>
+              <a target="_blank" href="https://www.rockstargames.com/br/contact"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <a target="_blank" href="https://www.rockstargames.com/br/careers"
+                >Careers</a
+              >
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://www.rockstargames.com/br/community-guidelines"
+                >Community Guidelines</a
+              >
+            </li>
+
+            <li>
+              <a target="_blank" href="Subscribe">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="caixa-redes-sociais"></div>
+
+        <ul class="lista">
+          <li>
+            <a target="_blank" href="https://www.rockstargames.com/br/corpinfo"
+              >Corporate</a
+            >
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.rockstargames.com/br/privacy"
+              >Privacy</a
+            >
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.rockstargames.com/br/cookies"
+              >Cookie Policy</a
+            >
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.rockstargames.com/br/legal"
+              >SLegal</a
+            >
+          </li>
+
+          <li>
+            <a target="_blank" href="https://www.rockstargames.com/br/ccpa"
+              >Do Not Sell or Share My Personal Information</a
+            >
+          </li>
+        </ul>
+
+        <div class="caixa-footer-p">
+          <p class="footer-p">Rockstar Games</p>
+
+          <div class="caixa-footer-p-2">
+            <p class="footer-p">New York</p>
+            <p class="footer-p">London</p>
+            <p class="footer-p">Paris</p>
+          </div>
+
+          <p class="footer-p">MCMXCVIII</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

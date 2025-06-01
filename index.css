@@ -391,7 +391,7 @@ button.ativo .seta {
 
 @font-face {
   font-family: "Chinese Rocks";
-  src: url("/chinese_rocks/chinese rocks rg.otf") format("truetype");
+  src: url("chinese_rocks/chinese-rocks-rg.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

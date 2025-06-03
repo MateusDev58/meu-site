@@ -1,3 +1,85 @@
+@media screen and (max-width: 1768px) {
+  .caixa-cabecalho {
+    justify-content: space-between;
+  }
+  .botao-mais {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1457px) {
+  .caixa-botao {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1524px) {
+  .online,
+  .Catalogo {
+    display: none;
+  }
+
+  .botao-mais {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1411px) {
+  .online-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1768px) {
+  .caixa-conteudo-Explorar {
+    transform: translateX(-90%);
+  }
+
+  .caixa-conteudo-Progresso {
+    transform: translateX(-50%);
+  }
+
+  .caixa-conteudo-Midia {
+    transform: translateX(20%);
+  }
+
+  .caixa-conteudo-Mais {
+    transform: translateX(165%);
+  }
+}
+
+@media screen and (max-width: 1768px) {
+  .caixa-conteudo-Explorar {
+    transform: translateX(-70%);
+  }
+
+  .caixa-conteudo-Progresso {
+    transform: translateX(-15%);
+  }
+
+  .caixa-conteudo-Midia {
+    transform: translateX(60%);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .caixa-conteudo-Explorar {
+    transform: translateX(-50%);
+  }
+
+  .caixa-conteudo-Progresso {
+    transform: translateX(30%);
+  }
+
+  .caixa-conteudo-Midia {
+    transform: translateX(76%);
+  }
+
+  .caixa-conteudo-Mais {
+    transform: translateX(150%);
+  }
+}
+
 @media screen and (max-width: 1283px) {
   .caixa-conteudo-Mais {
     display: none;

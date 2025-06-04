@@ -2,7 +2,8 @@
   .caixa-cabecalho {
     justify-content: space-between;
   }
-  .botao-mais {
+  .botao-mais,
+  .online-2 {
     display: none;
   }
 }

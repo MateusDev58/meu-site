@@ -43,9 +43,8 @@ html {
 }
 
 .logo-red-dead-redemption {
-  max-width: 26.438rem;
-  height: 3rem;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .visao-geral {
@@ -130,6 +129,7 @@ html {
   display: none;
 }
 
+.online-2:hover .linha-underline2,
 .Catalogo:hover .linha-underline2,
 .online:hover .linha-underline2,
 .botao-explorar:hover .linha-underline2,

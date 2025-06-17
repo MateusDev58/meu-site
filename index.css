@@ -492,7 +492,7 @@ button.ativo .seta {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-40%);
+  transform: translate(-40%, -20%);
   padding: 5rem 0rem 2rem;
 }
 

@@ -208,24 +208,39 @@
 }
 
 /* Sessão Foragidos para sempre */
-
 @media screen and (max-width: 1023px) {
   .Foragidos-h1 {
     font-size: 9.9rem;
   }
-
-  .Ja-disponivel {
-    font-size: 4.6rem;
-  }
 }
 
-@media screen and (max-width: 893px) {
+@media screen and (max-width: 894px) {
   .Foragidos-h1 {
     white-space: normal;
     word-break: break-word;
     max-width: 90%;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .Ja-disponivel {
+    transform: translateY(15px);
+  }
+
+  .caixa-disponivel-18 {
+    transform: translate(-40%, 7%);
+  }
+
+  .caixa-disponivel-18 {
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .caixa-mais-18-img {
+    max-width: 9.295rem;
+    height: 9.194rem;
+    border-radius: 0.5rem;
   }
 }
 
@@ -237,37 +252,73 @@
   .Ja-disponivel {
     font-size: 4rem;
   }
-
-  .img-estrela {
-    height: 23rem;
-  }
-
-  .caixa-disponivel-18 {
-    transform: translate(-50%, 5%);
-  }
-
-  .caixa-mais-18-img {
-    transform: translate(62%, 14%);
-  }
 }
 
-@media screen and (max-width: 419px) {
-  .img-estrela {
-    height: 15rem;
-  }
-
-  .caixa-disponivel-18 {
-    transform: translate(-50%, 30%);
-  }
-
+@media screen and (max-width: 700px) {
   .caixa-mais-18-img {
-    height: 4.194rem;
-    height: 7.194rem;
+    max-width: 8.295rem;
+    height: 8.194rem;
+    border-radius: 0.5rem;
   }
 
   .mais-18-img {
+    width: 100%;
     max-width: 5.095rem;
     height: 5.095rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .caixa-mais-18-img {
+    max-width: 7.295rem;
+    height: 7.194rem;
+    border-radius: 0.5rem;
+  }
+
+  .mais-18-img {
+    width: 100%;
+    max-width: 5.095rem;
+    height: 5.095rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .caixa-mais-18-img {
+    max-width: 6.295rem;
+    height: 6.194rem;
+    border-radius: 0.5rem;
+  }
+
+  .mais-18-img {
+    width: 100%;
+    max-width: 4.095rem;
+    height: 4.095rem;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .caixa-disponivel-18 {
+    transform: translate(-40%, 35%);
+  }
+
+  .caixa-mais-18-img {
+    max-width: 6.295rem;
+    height: 6.194rem;
+    border-radius: 0.5rem;
+  }
+
+  .mais-18-img {
+    width: 100%;
+    max-width: 4.095rem;
+    height: 4.095rem;
+  }
+
+  .Ja-disponivel {
+    transform: translateY(5%);
+  }
+
+  .img-estrela {
+    height: 15rem;
   }
 }
 
